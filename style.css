@@ -83,11 +83,53 @@
   margin-top: 50px;
 }
 
+.kontainer {
+  width: 60%;
+
+  border: solid;
+  margin: auto;
+}
+
+.h2 {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.label1 {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.gagzavnaflex {
+  display: flex;
+  justify-content: center;
+}
+
+.gagzavnabutton {
+  width: 200px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #171717;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
 @media (max-width: 1024px) {
   .fotoebisqrol {
     display: grid;
     grid-template-columns: repeat(3, 0fr);
     gap: 10px;
     margin-left: 15px;
+  }
+
+  .kontainer {
+    width: 95%;
+
+    border: solid;
+    margin: auto;
   }
 }
