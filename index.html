@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dc38e36d93.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
@@ -24,7 +28,8 @@
     <div class="textdiv1">
       <h1 class="h1">რატომ ვიყენებთ მას და საიდან მოდის ეს ტექსტი?</h1>
     </div>
-    <section class="fotoebisqrol widthClass">
+
+    <div class="fotoebisqrol widthClass">
       <a>
         <img src="fotoebi/foto2.png" alt="#" />
       </a>
@@ -43,7 +48,8 @@
       <a>
         <img src="fotoebi/foto7.png" alt="#" />
       </a>
-    </section>
+    </div>
+
     <div class="paragraftextdiv widthClass">
       <p class="paragraftext">
         ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის
@@ -68,57 +74,93 @@
     <footer class="footer widthClass">
       <div class="kontainer">
         <h2 class="h2">კონტაქტი</h2>
-        <div>
-          <form class="form1">
-            <p class="label1"><label for="input1">სახელი, გვარი</label></p>
-            <input type="text" id="input1" placeholder="შეიყვანეთ ტექსტი" />
-          </form>
-        </div>
-        <div>
-          <form class="form2">
+        <form>
+          <div class="form1">
+            <p class="label1"><label for="label1">სახელი, გვარი</label></p>
+            <input
+              class="input"
+              type="text"
+              id="label1 "
+              placeholder="შეიყვანეთ ტექსტი"
+            />
+          </div>
+          <div class="form2">
             <p class="label1"><label for="label2"> ელ. ფოსტა</label></p>
-            <input type="email" id="label2" placeholder="შეიყვანეთ მაილი" />
-          </form>
-        </div>
-        <div>
-          <form class="form3">
+            <input
+              type="email"
+              class="input"
+              id="label2"
+              placeholder="შეიყვანეთ მაილი"
+            />
+          </div>
+          <div class="form3">
             <p class="label1"><label for="label3">ტელეფონის ნომერი</label></p>
-            <input type="email" id="label3" placeholder="შეიყვანეთ ნომერი" />
-          </form>
-        </div>
-        <div>
-          <form class="form4">
+            <input
+              type="tel"
+              class="input"
+              id="label3"
+              placeholder="შეიყვანეთ ნომერი"
+            />
+          </div>
+          <div class="form4">
             <p class="label1"><label for="label4">შეტყობინება</label></p>
             <textarea
+              cols="30"
+              rows="7"
               type="email"
               id="label4"
+              class="input"
               placeholder="შეიყვანეთ შეტყობინება"
             >
             </textarea>
-          </form>
-        </div>
-        <div class="gagzavnaflex widthClass">
-          <button class="gagzavnabutton">გაგზავნა</button>
-        </div>
+          </div>
+          <div class="gagzavnaflex widthClass">
+            <button class="gagzavnabutton">გაგზავნა</button>
+          </div>
+        </form>
         <div class="rukakont widthClass">
           <iframe
-            src="fotoebi/rukasaqartvelo.webp"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.8646060939227!2d44.77416117601253!3d41.72344037125922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d9899c2ac5%3A0x38f38f9f00c0f453!2sSaakadze%20Square!5e0!3m2!1sen!2sge!4v1687937540935!5m2!1sen!2sge"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
             frameborder="0"
             class="ruka"
           ></iframe>
         </div>
-        <!-- <div class="iqonkontflex">
+        <div class="iqonkontflex">
           <div class="iqon1">
-            <a class="feri">
-              <img src="fotoebi/iqon1.png" class="iqon1foto" alt="#" />
-            </a>
+            <i class="fa-solid fa-phone"></i>
+            <a class="A1" href="tel:+123 45 67 98">+123 45 67 98</a>
           </div>
-          <div class="iqon2">
-            <a>
-              <img src="fotoebi/iqon2.png" class="iqon2foto" alt="#" />
-            </a>
+          <div class="iqon1">
+            <i class="fa-solid fa-envelope"></i>
+            <a class="A1" href="mailto:sh.narsa1997@gmail.com"
+              >sh.narsa1997@gmail.com</a
+            >
           </div>
-        </div> -->
+        </div>
+        <div class="bolooriflex">
+          <div class="damziqon">
+            <span>
+              დამზადებულია
+              <div class="iqonred"><i class="fa-solid fa-heart"></i></div>
+              - ით</span
+            >
+          </div>
+          <div class="logo2">
+            <i class="fa-solid fa-volleyball"></i> SmartWeb
+          </div>
+        </div>
+        <div class="boloflex">
+          <div class="spanflex">
+            <span class="bolotext"> ყველა უფლება დაცულია</span>
+          </div>
+          <div class="boloiqon">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

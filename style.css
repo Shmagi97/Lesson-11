@@ -10,11 +10,6 @@
   justify-content: center;
 }
 
-/* .logo {
-  border: solid;
-  position: relative;
-} */
-
 .widthClass {
   max-width: 1024px;
   width: 100%;
@@ -51,6 +46,7 @@
   justify-content: center;
   /* border: solid; */
   gap: 10px;
+  overflow-x: auto;
 }
 
 .paragraftext {
@@ -127,22 +123,100 @@
 
 .ruka {
   border-radius: 20px;
+  width: 80%;
+  height: 250px;
 }
 
-/* .iqonkontflex {
+.iqonkontflex {
   display: flex;
-}
-.feri {
-  color: rgb(0, 0, 0);
+  /* border: solid; */
+  justify-content: center;
+
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 .iqon1 {
-  color: #ee1414;
+  color: white;
+  display: flex;
+  gap: 20px;
 }
 
-.iqon1foto {
-  background-color: rgb(247, 0, 0);
-} */
+.A1 {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bolooriflex {
+  display: flex;
+
+  justify-content: space-around;
+  margin-top: 50px;
+  /* border: solid; */
+}
+
+.damziqon {
+  color: #ffffff;
+}
+
+.iqonred {
+  display: inline-block;
+  color: red;
+}
+
+.logo2 {
+  color: #ffffff;
+}
+
+.boloflex {
+  display: flex;
+  gap: 150px;
+  /* border: solid; */
+  justify-content: center;
+  padding-right: 70px;
+  margin-top: 50px;
+}
+
+.spanflex {
+  display: flex;
+  align-items: center;
+}
+
+.bolotext {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.boloiqon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0.5px solid wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+input:focus {
+  color: rgb(220, 121, 121);
+  background-color: rgb(174, 227, 227);
+  outline: none;
+}
+
+textarea:focus {
+  color: rgb(220, 121, 121);
+  background-color: rgb(174, 227, 227);
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid rgb(253, 253, 253);
+
+  background-color: #0a22f4;
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   .fotoebisqrol {
     display: grid;
@@ -155,5 +229,65 @@
     width: 95%;
 
     margin: auto;
+  }
+
+  .iqonkontflex {
+    gap: 250px;
+  }
+
+  @media (max-width: 630px) {
+    .iqonkontflex {
+      gap: 50px;
+    }
+  }
+
+  @media (max-width: 548px) {
+    .fotoebisqrol {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 508px) {
+    .boloflex {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      padding-left: 80px;
+    }
+
+    .boloiqon {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      border: 0.5px solid wheat;
+    }
+  }
+
+  @media (max-width: 456px) {
+    .bolooriflex {
+      gap: 50px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    .iqonkontflex {
+      /* display: grid; */
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .bolooriflex {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 382px) {
+    .spanflex {
+      /* border: solid; */
+      justify-content: center;
+      width: 180%;
+    }
   }
 }
